@@ -8,11 +8,11 @@ const Starter = () => {
     return (
         
         <Container className="register" >
-            <h2 className="text-center header"> Auth demo for user</h2>
-            <Button onClick={()=> navigate('./Signin')} variant='success'>
+            <h2 className="text-center header"> To Do App Demo with Firebase</h2>
+            <Button onClick={()=> navigate('./Signin')} variant='secondary'>
                 Sign-in
             </Button>
-            <Button onClick={()=> navigate('./Register')} variant='success'>
+            <Button onClick={()=> navigate('./Register')} variant='secondary'>
                 Register
             </Button>
         </Container>

@@ -5,7 +5,8 @@ export const INITIAL_STATE = {
     password:'',
     error:false,
     loading:false,
-    isLogin:false
+    isLogin:false,
+    list:[],
 };
 
 
@@ -22,6 +23,8 @@ export const signinReducer= (state, action) => {
             return {...state, isLogin:true ,error:false, loading:false};
         case 'LOGIN_USER_FAIL':
             return {...state, error:true, password:'', loading:false};
+        case 'FETCH_LIST':
+            return {...state, list:action.payload};
         default:
             return state;
     }

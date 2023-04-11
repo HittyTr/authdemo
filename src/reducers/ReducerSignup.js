@@ -1,9 +1,9 @@
 export const INITIAL_STATE = {
     email:'',
     password:'',
-    error:false,
+    error:'',
     loading:false,
-    username:'',
+    username:''
 };
 
 export const signupReducer= (state, action) => {
@@ -17,7 +17,7 @@ export const signupReducer= (state, action) => {
         case 'SIGNUP_USER_SUCCESS':
             return {...state, error:false, loading:false};
         case 'SIGNUP_USER_FAIL':
-            return {...state, error:true, password:'', loading:false};
+            return {...state, error:action.payload, loading:false};
         default:
             return state;
     }
