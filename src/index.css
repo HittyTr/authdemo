@@ -19,7 +19,7 @@
 }
 .header{
     color:#7979a9;
-    margin: 5% 0 0 0;
+    margin: 10% 0 0 0;
     padding: 0 15% 0 15%;
     font-weight: 700;
 }
@@ -50,7 +50,7 @@ html{
     width: 70vw;
     gap: 2rem;
     color: #7979a9;
-    margin: 15% 10% 20% 15%;
+    margin: 8% 10% 20% 15%;
     padding: 0%;
 }
 .mainButton{
