@@ -7,8 +7,8 @@ function ListItem({item,handleDelete, handleEdit,editInfo, handleCheck}){
     return (
             <Container className="listItem mt-3 mb-3">
             <Row>
-            <Col xs={7} style={{textDecoration:item.isCompleted?'line-through':'none',textAlign:'left',padding:'1vw 0 0 1vw'}}><span style={{wordWrap:'break-word', fontWeight:'500'}}>{item.text}</span></Col>
-            <Col className="text-right pt-2" xs={1}>
+            <Col xs={7} style={{textDecoration:item.isCompleted?'line-through':'none',textAlign:'left',padding:'0 0 0 1vw'}}><span style={{wordWrap:'break-word', fontWeight:'500'}}>{item.text}</span></Col>
+            <Col className="text-right pt-1" xs={1}>
             <input className="checkbox" type="checkbox" checked={item.isCompleted} onChange={()=>handleCheck(item.id)}  />
             </Col>
             <Col  style={{padding:'0 0 0 3%' }} xs={4}>
