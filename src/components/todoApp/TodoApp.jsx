@@ -32,7 +32,7 @@ function TodoApp() {
         return () => {
             unsubscribe()
         }
-    }, [userRef])
+    }, [])
 
     const handleItemDelete=async(id)=>{
         try {
