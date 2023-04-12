@@ -31,7 +31,7 @@ function TodoApp() {
         });
         return () => {
             unsubscribe()
-        }
+        } // eslint-disable-next-line
     }, [])
 
     const handleItemDelete=async(id)=>{
